@@ -45,12 +45,15 @@
 }
 .seach_icon{
     position: absolute;
-    top: 110px;
+    top: 117px;
+    cursor: pointer;
 }
 
 .add_contact{
+    position: relative;
     align-items: center;
-    display: flex;
+
+    cursor: pointer;
 }
 
 .ContactContainer{
@@ -80,6 +83,11 @@
 .listImg{
     padding: 5px;
 }
+.FormSetting{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .UpdateContact{
     display: flex;
     justify-content: flex-end;
@@ -90,7 +98,11 @@
 .Contact_popup{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    /* margin-top: 100px; */
+    position: relative;
+    /* left: 55px; */
+    /* bottom: 250px; */
+    align-items: center;
 }
 .AddContact{
     background-color: white;
@@ -123,4 +135,8 @@
     background-color:#FCCA3F;
     font-weight: 600;
     border-radius: 5px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
 }

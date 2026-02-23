@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Firebase Contact App
 
 A modern, responsive contact management application built with React and Firebase Firestore. This app allows you to create, read, update, delete, and search contacts in real-time.

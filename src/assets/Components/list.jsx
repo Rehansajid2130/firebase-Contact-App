@@ -24,7 +24,7 @@ import { Formik, Field, Form } from "formik";
 const list = () => {
   const [Contact, setContact] = useState([]);
   const [allContacts, setAllContacts] = useState([]);
-  const [NoContacts, setNoContacts] = useState(false);
+  const [NoContacts, setNoContacts] = useState(true);
   const [AddContact, setAddContact] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [editContact, setEditContact] = useState(null);
@@ -33,8 +33,7 @@ const list = () => {
     const getContact = async () => {
       try {
         setNoContacts(true);
-        const ContactCollection = collection(db, "Contact");
-
+        const ContactCollection = collection(db, "Contact")
         onSnapshot(ContactCollection, (snapshot) => {
           const ContactList = snapshot.docs.map((doc) => {
             return {
@@ -205,7 +204,7 @@ const list = () => {
                 setEditContact(null);
               }}
             >
-              <Form>
+              <Form className="FormSetting">
                 <div className="AddContactForm">
                   <span>Name</span>
                   <Field name="Name" type="text" className="AddContact_input" />
